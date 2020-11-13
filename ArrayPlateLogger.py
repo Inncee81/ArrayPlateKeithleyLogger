@@ -221,6 +221,7 @@ class arrayPlateMeasurement:
                 d = json.load(infile)
                 for entry in d:
                     self.data.append(entry)
+            print(self.len(), 'entries loaded.')
         except:
             print("File not found.")
     
