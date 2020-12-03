@@ -289,7 +289,7 @@ class arrayPlateMeasurement:
             # print(saveString)
             saveString = roundSigFig(saveString, 4)
             # print()
-            # print(saveString)
+            print(fName)
             with open(fName, 'w') as outfile:
                 outfile.write(saveString)
                 # json.dump(self.data, outfile, indent=4)
