@@ -3,17 +3,10 @@ import json
 import re
 import time
 import numpy as np
+import pandas as pd
 import plotly.graph_objects as go
 
 def roundSigFig(data, maxSF = 4):
-    """
-    { function_description }
-    
-    :param      data:   The data
-    :type       data:   { type_description }
-    :param      maxSF:  The maximum sf
-    :type       maxSF:  number
-    """
     floatMatches = list(re.finditer('\d+\.\d+', data))
     dataList = []
     prevEndIndex = 0
@@ -293,7 +286,23 @@ class arrayPlateMeasurement:
             with open(fName, 'w') as outfile:
                 outfile.write(saveString)
                 # json.dump(self.data, outfile, indent=4)
-    
+
+    def exportCSV(self, fHeader):
+        df = pd.DataFrame(self.data)
+        df = df.drop('currents', axis = 1)
+        middleRowI = len(self.data[0]['currents']) //2
+        currentSlices = []
+        for run in self.data:
+            currentSlices.append(run['currents'][middleRowI])
+        currentDF = pd.DataFrame(currentSlices)
+        currentDF.columns = [f'C{i}' for i in range(len(currentSlices[0])) ]
+        # output = df[['time', 'pressure', 'Vbias', 'Ibias', 'Varc', 'Iarc', 'Ibase', 'note']]
+        # pd.concat([output, currentDF])
+        df = df.join(currentDF)
+        del(currentDF)
+        # df.to_csv('test.csv')
+        df.T.to_csv(fHeader + '.csv')
+
     def load(self, fName):
         self.data = list()
         try:

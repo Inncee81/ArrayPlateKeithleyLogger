@@ -1,0 +1,19 @@
+,0,1,2,3,4,5,6,7,8,9,10,11
+pressure,0.0002,0.0002,0.0002,0.0002,0.0002,0.0002,0.0002,0.0002,0.0002,0.0002,0.0002,0.0005
+Vbias,125,125,125,125,125,125,125,125,125,125,125,125
+Ibias,12.7,21.5,31.5,43.6,52.2,15.6,44.5,106.5,125.5,225.0,295.0,457.0
+Varc,69.3,69.3,69.3,69.3,70.0,70.8,70.8,70.8,70.8,70.6,70.6,70.3
+Iarc,1.36,2.04,2.98,4.26,5.12,0.53,1.04,2.24,2.93,4.14,5.25,5.1
+Vext,-6000.0,,,,,,,,,,,
+Ipfs_tube,0.45,0.68,0.96,1.45,1.65,,,,,,,
+Ibase,1.032,1.592,2.156,2.916,3.21,1.11,3.0,6.75,7.56,12.0,14.33,12.66
+note,Tube connected to PFS via ammeter. PFS connected to positive terminal. Ipfs_tube in Amps!,Tube connected to PFS via ammeter. PFS connected to positive terminal. Ipfs_tube in Amps!,Tube connected to PFS via ammeter. PFS connected to positive terminal. Ipfs_tube in Amps!,Tube connected to PFS via ammeter. PFS connected to positive terminal. Ipfs_tube in Amps!,Tube connected to PFS via ammeter. PFS connected to positive terminal. Ipfs_tube in Amps!,Tube now floating. Bed current takes ages to equilibriate.,Tube now floating. Bed current takes ages to equilibriate.,Tube now floating. Bed current takes ages to equilibriate.,Tube now floating. Bed current takes ages to equilibriate.,Tube now floating. Bed current takes ages to equilibriate.,Tube now floating. Bed current takes ages to equilibriate.,Tube now floating. Bed current takes ages to equilibriate.
+time,201130_155937,201130_160140,201130_160245,201130_160410,201130_160627,201130_161307,201130_161443,201130_161625,201130_161806,201130_162041,201130_162412,201130_163144
+Vpfs_tube,,,,,,56.0,54.0,52.0,52.0,51.0,51.0,42.0
+C0,0.001075,0.001791,0.002732,0.004464,0.005634,0.001066,0.003941,0.01676,0.02144,0.04426,0.06196,0.1562
+C1,0.004912,0.009819,0.01588,0.02501,0.03017,0.004649,0.01717,0.05127,0.06051,0.1055,0.1373,0.256
+C2,0.009611,0.01641,0.02406,0.0342,0.04009,0.008406,0.02678,0.07263,0.08508,0.1444,0.1849,0.3303
+C3,0.01119,0.01799,0.02513,0.03492,0.04041,0.01008,0.03101,0.08127,0.0949,0.1596,0.202,0.3535
+C4,0.009552,0.01524,0.02143,0.02935,0.03409,0.01064,0.03069,0.07761,0.0909,0.1514,0.194,0.355
+C5,0.003818,0.007812,0.01321,0.02009,0.02431,0.007229,0.02208,0.05848,0.06958,0.1145,0.1493,0.2865
+C6,0.0007957,0.001291,0.001847,0.002642,0.003161,0.0009574,0.003551,0.01348,0.01734,0.03765,0.05406,0.1377
